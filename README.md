@@ -23,13 +23,13 @@ This project includes:
 
 ```bash
 # Clone the repository
-git clone https://github.com/MrMatias305/my-first-repo.git
-cd my-first-repo
+git clone https://github.com/MrMatias305/housing-price-predictor.git
+cd housing-price-predictor/app
 ```
 2. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+ pip install -r ../requirements.txt
 ```
 ---
 
