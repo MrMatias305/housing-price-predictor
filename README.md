@@ -38,7 +38,7 @@ cd housing-price-predictor/app
 Run the streamlit app
 
 ```bash
-pip streamlit run app.py
+streamlit run app.py
 ```
 ---
 
