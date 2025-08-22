@@ -10,7 +10,6 @@ def load_dataset():
     # Load data
     data = pd.read_csv(os.path.join("..", "data", "housing.csv"))
     data.columns = [" ".join(col.split("_")).capitalize() for col in data.columns]
-    print(data.columns)
 
     X = data.drop(columns='Median house value')
     y = data['Median house value']
@@ -29,8 +28,6 @@ def feature_groups():
     X, y = load_dataset()
     numerical_features = [col for col in X.columns if col != 'Ocean proximity']
     categorical_features = ['Ocean proximity']
-    print(numerical_features)
-    print(categorical_features)
     return numerical_features, categorical_features
 
 
