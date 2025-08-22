@@ -22,7 +22,6 @@ This project includes:
 1. Clone the repository:
 
 ```bash
-# Clone the repository
 git clone https://github.com/MrMatias305/housing-price-predictor.git
 cd housing-price-predictor/app
 ```
