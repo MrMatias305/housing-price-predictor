@@ -9,7 +9,7 @@ from train_model import split_data
 
 def validate_model():
     # Load model
-    model_path = os.path.join("", "models", "best_model_pipeline.pkl")
+    model_path = os.path.join("..", "models", "best_model_pipeline.pkl")
     with open(model_path, "rb") as f:
         model = joblib.load(model_path)
 
@@ -32,7 +32,7 @@ def validate_model():
                           }
 
     # Save validation results
-    model_path = os.path.join('', 'results', 'reports', 'validation_metrics.json')
+    model_path = os.path.join('..', 'results', 'reports', 'validation_metrics.json')
     with open(model_path, 'w') as f:
         json.dump(validation_metrics, f)
 

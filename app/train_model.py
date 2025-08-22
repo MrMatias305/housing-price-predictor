@@ -40,11 +40,11 @@ def train_pipeline():
     model_info = random_search.best_params_
 
     # Save model
-    model_path = os.path.join('', 'models', 'best_model_pipeline.pkl')
+    model_path = os.path.join('..', 'models', 'best_model_pipeline.pkl')
     joblib.dump(best_model_pipeline, model_path)
 
     # Save model info
-    model_info_path = os.path.join("", "results", "reports", "model_info.json")
+    model_info_path = os.path.join("..", "results", "reports", "model_info.json")
     with open(model_info_path, "w") as f:
         json.dump(model_info, f)
 
